@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    javascript can change content or structure of HTML document
+
+    <h1 id="first" onclick="this.innerHTML='Event <i>content<l/>'">JavaScript</h1>
+    <-- Javascript can change attributes -->
+        <h1 onclick="this.align='centre'">Attributes Test</h1>
+        javascript can change style sheet
+        <h1 onclkick="this.style.color='red'">style Test</h1>
+        <input type="button" value="click" onclick="changeFontsize()">
+        <script>
+            //print methode
+            document.write("Hello from JavaScript");
+            //alert('Hello from Alert');
+            document.getElementById("first").innerHTML = "Another print content";
+            console.log("this is consol print");
+            /*
+             Events:
+             onclick, ondoubleclick, onmouseover, onmouseout,onkeyup,onkeydown,onchange,onfocus,onselect,onload*/
+            //selectorst
+            document.getElementById("first");
+            document.getElementsByTagName("h1")[2];
+            document.getElementsByClassName("Class_name");
+            document.getElementsByName("element_name");
+
+            //function in Javascript
+            //(for i in range (1,8,2) to print 1,3,5,7,9 in python)
+            function changeFontsize() {
+                headings = document.getElementsByTagName("h1");
+
+                for (i = 0; i < headings.length; i++) {
+                    headings[i].style.fontSize = "12px";
+
+                }
+            }
+
+
+            a = Number(prompt("Enter 1st Number"));
+            b = Number(prompt("Enter 2nd Number"));
+            alter(a + b);
+
+            if (c === "+") {
+                alter(a + b);
+            }
+            if (c === "-") {
+                alter(a + b);
+            }
+            if (c === "*") {
+                alter(a + b);
+            }
+            if (c === "/") {
+                alter(a + b);
+            }
+            case "+": alter(a+b);
+        </script>
+</body>
+
+</html>

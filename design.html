@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design in websites</title>
+    <style>
+    #myDiv{
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+        animation: myAnimation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+    }
+    #myDiv{
+        color: white;
+        /* transform: rotateX('180deg'); */
+
+    }
+    #myDiv :hover{
+        color: white;
+        transform: rotateX(360deg);
+        transition: 3s;
+
+    }
+    @keyframes myAnimation{
+        from
+        {background-color: blue;}
+        
+        to{
+            background-color: aquamarine;
+
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="myDiv">
+        <h1>css Design</h1>
+    </div>
+    
+</body>
+</html>
